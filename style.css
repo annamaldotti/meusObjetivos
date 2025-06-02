@@ -16,7 +16,7 @@ body {
 }
 
 .conteudo-principal {
-  display: flex;block
+  display: flex;block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px){
 .botoes{
     display:flex;
 }
@@ -97,4 +97,5 @@ body {
 }
 .botao:last-child{
     border-radius: 0 40px 0 0;
+}
 }
