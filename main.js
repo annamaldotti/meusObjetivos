@@ -22,7 +22,6 @@ const tempoObjetivo4 = new Date("2025-12-05-05T00:00:00");
 
 const tempo = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
-contadores[0]. textContent = calculaTempo;
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
@@ -34,6 +33,10 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas%= 24;
-
+    if (tempoFinal > 0) {
     return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ";
+} else {
+     " minutos " + " segundos " + " segundos ";
+     return "Prazo Finalizado";
+}
 }
